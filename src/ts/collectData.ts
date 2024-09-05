@@ -25,9 +25,9 @@ export function collectNwriteData(req: any) {
             await client.close();
         }
         run().catch(console.dir);
+    }
 }
-}
-
+console.log('ich bin nicht gay')
 
 
 
