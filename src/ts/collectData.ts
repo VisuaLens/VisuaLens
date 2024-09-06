@@ -1,10 +1,16 @@
-import * as constants from "node:constants";
+// This file is used to collect and merge the data collected by multiple functions in the /utils/ directory.
+// after it fetched all the data it will write it into a MongoDB Database
 
-const { MongoClient } = require('mongodb');
+
+
+import * as constants from "node:constants";
+import {getDate, getDevice, getSId, getUId, getVId} from "../utils/get";
+
+// const { MongoClient } = require('mongodb');
 const moment = require('moment-timezone')
 
-const uri = 'mongodb://localhost:27017';
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// const uri = 'mongodb://localhost:27017';
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 export function collectNwriteData(req: any) {
 
@@ -12,10 +18,20 @@ export function collectNwriteData(req: any) {
     function getVisitData() {
         // Variables
         const time = moment().tz('Europe/Berlin').format('YYYY-MM-DD HH:mm:ss');
+        const device = getDevice(req);
+
 
         const data = {
-            "date": time,
-            "ip": '' // hier soll die ip hin
+            visits: [
+                {
+                    "VId": getVId(),
+                    "UId": getUId(),
+                    "SId": getSId(),
+                    "date": getDate(),
+                    "device": device
+                },
+            ],
+
         }
 
         // const ip = get.ip
@@ -25,22 +41,10 @@ export function collectNwriteData(req: any) {
 
     let data: any = getVisitData()
 
-    async function run() {
-        try {
-            await client.connect();
-            const db = client.db('meineDatenbank');
-            const collection = db.collection('meineSammlung');
+    // async function run() {
 
-
-            const result = await collection.insertOne(data);
-            console.log("Dokument eingefügt:", result.insertedId);
-        } finally {
-            await client.close();
-        }
-        run().catch(console.dir);
-    }
+    return data
 }
-console.log('ich bin nicht gay')
 
 
 

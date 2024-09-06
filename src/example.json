@@ -1,0 +1,77 @@
+{
+  "visits": [
+    {
+      "visit_id": "v12345",
+      "user_id": "u67890",
+      "session_id": "s12345",
+      "website_name": "buysite",
+      "page_url": "/products",
+      "referrer": "google.com",
+      "device": {
+        "type": "desktop",
+        "os": "Windows",
+        "browser": "Chrome",
+        "browser_version": "92.0.4515.131",
+        "screen_resolution": "1920x1080"
+      },
+      "ip_address": "192.168.1.1",
+      "location": {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      "timestamp": "2024-09-04T12:00:00Z"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "e98765",
+      "user_id": "u67890",
+      "session_id": "s12345",
+      "event_type": "button_click",
+      "element_id": "buy_button",
+      "page_url": "/products",
+      "website_name": "buysite",
+      "timestamp": "2024-09-04T12:01:00Z",
+      "metadata": {
+        "button_text": "Buy Now",
+        "button_position": "footer"
+      }
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "txn123",
+      "user_id": "u67890",
+      "session_id": "s12345",
+      "website_name": "buysite",
+      "amount": 29.99,
+      "currency": "EUR",
+      "items": [
+        {
+          "item_id": "prod1",
+          "item_name": "Minecraft Sword",
+          "quantity": 1,
+          "price_per_item": 29.99
+        }
+      ],
+      "timestamp": "2024-09-04T12:02:00Z"
+    }
+  ],
+  "users": [
+    {
+      "user_id": "u67890",
+      "first_visit": "2024-09-01T10:00:00Z",
+      "last_visit": "2024-09-04T12:00:00Z",
+      "visit_count": 5,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36",
+      "attributes": {
+        "is_logged_in": true,
+        "membership_level": "premium",
+        "preferences": {
+          "language": "en",
+          "currency": "EUR"
+        }
+      }
+    }
+  ]
+}

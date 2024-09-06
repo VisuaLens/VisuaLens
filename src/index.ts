@@ -30,7 +30,8 @@ app.post('/api/Wevent', (req, res) => {
 
 app.post('/api/Wvisit', async (req, res) => {
     console.log('Visit API accessed');
-    collectNwriteData(req);
+    const data = collectNwriteData(req);
+    console.log(data)
     res.status(200).send();
 });
 
