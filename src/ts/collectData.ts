@@ -1,3 +1,5 @@
+import * as constants from "node:constants";
+
 const { MongoClient } = require('mongodb');
 const moment = require('moment-timezone')
 
@@ -5,12 +7,23 @@ const uri = 'mongodb://localhost:27017';
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 export function collectNwriteData(req: any) {
-    const time = moment().tz('Europe/Berlin').format('YYYY-MM-DD HH:mm:ss');
-    const data = {
-        "date": time,
-        "ip": '' // hier soll die ip hin
+
+
+    function getVisitData() {
+        // Variables
+        const time = moment().tz('Europe/Berlin').format('YYYY-MM-DD HH:mm:ss');
+
+        const data = {
+            "date": time,
+            "ip": '' // hier soll die ip hin
+        }
+
+        // const ip = get.ip
+
+        return data
     }
 
+    let data: any = getVisitData()
 
     async function run() {
         try {
