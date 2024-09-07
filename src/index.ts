@@ -35,6 +35,10 @@ app.post('/api/Wvisit', async (req, res) => {
     res.status(200).send();
 });
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './index.html'));
+})
+
 // Server Start
 app.listen(8000, () => {
     console.log('Server is listening on port 8000');

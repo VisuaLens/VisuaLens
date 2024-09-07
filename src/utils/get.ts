@@ -28,10 +28,10 @@ export function getVId() {
 }
 
 export function getDevice(req: app.Request) {
-    const os = req.userAgent?.os;
-    const browser = req.userAgent?.browser;
-    const ip = req.ip;
-    const useragent = req.userAgent?.useragent;
+    const os = req.userAgent?.os || "unknown";
+    const browser = req.userAgent?.browser || "unknown";
+    const ip = req.ip || "unknown";
+    const useragent = req.userAgent?.useragent || "unknown";
 
     const devices = {
         "devices": {
@@ -42,5 +42,6 @@ export function getDevice(req: app.Request) {
         }
     }
 
-    return devices;
+
+    return JSON.stringify(devices);
 }
