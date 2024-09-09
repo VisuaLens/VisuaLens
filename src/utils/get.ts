@@ -45,6 +45,7 @@ export async function getDevice(req: app.Request, res: app.Response) {
         return os;
     }
 
+    const response = (res)
 
     function getBrowser() {
         if(userAgent.includes('Chrome')) {
