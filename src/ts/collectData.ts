@@ -12,13 +12,15 @@ const moment = require('moment-timezone')
 // const uri = 'mongodb://localhost:27017';
 // const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
-export function collectNwriteData(req: any) {
 
 
-    function getVisitData() {
+export async function collectNwriteData(req: any) {
+
+
+    async function getVisitData() {
         // Variables
         const time = moment().tz('Europe/Berlin').format('YYYY-MM-DD HH:mm:ss');
-        const device = getDevice(req);
+        const device = await getDevice(req);
 
 
         const data = {
@@ -28,7 +30,7 @@ export function collectNwriteData(req: any) {
                     "UId": getUId(),
                     "SId": getSId(),
                     "date": getDate(),
-                    "device": device
+                    "device":  device
                 },
             ],
 
@@ -39,11 +41,11 @@ export function collectNwriteData(req: any) {
         return data
     }
 
-    let data: any = getVisitData()
-
+    let data: any = await getVisitData()
+    const JSONdata = JSON.parse(data)
     // async function run() {
-
-    return data
+    console.log(JSONdata)
+    return JSONdata
 }
 
 

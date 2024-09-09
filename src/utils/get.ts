@@ -27,7 +27,7 @@ export function getVId() {
     return Vcounter
 }
 
-export async function getDevice(req: app.Request, res: app.Response) {
+export async function getDevice(req: app.Request,) {
 
     const userAgent = req.headers['user-agent'];
     let os: any = 'Unknown'
@@ -45,7 +45,6 @@ export async function getDevice(req: app.Request, res: app.Response) {
         return os;
     }
 
-    const response = (res)
 
     function getBrowser() {
         if(userAgent.includes('Chrome')) {
@@ -62,19 +61,18 @@ export async function getDevice(req: app.Request, res: app.Response) {
     getBrowser()
     getOs()
 
-    const ip = req.ip()
+    // const ip = req.ip()
     const useragent = req.headers['user-agent'];
 
     const devices = {
         "devices": {
             "os": os,
             "browser": browser,
-            "ip": ip,
+
             "useragent": useragent,
         }
     }
 
-    console.log(devices)
     return JSON.stringify(devices);
 }
 
