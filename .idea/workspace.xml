@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8a3c5d7-3222-45c2-8713-80f7a4c0a34b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/get.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/get.ts" afterDir="false" />
     </list>
@@ -44,13 +45,17 @@
     "Node.js.index.ts.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "javascript.karma.karma_node_package_dir": "",
+    "last_opened_file_path": "C:/Users/Theo/Desktop/code-projects/ForgeData",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "",
+    "nodejs.mocha.mocha_node_package_dir": "",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/theo/Desktop/Code-Projekte/ForgeData/node_modules/typescript/lib",
+    "ts.external.directory.path": "C:\\Users\\Theo\\Desktop\\code-projects\\ForgeData\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,7 +75,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
       </set>
     </attachedChunks>
   </component>
@@ -89,6 +94,11 @@
       <workItem from="1725629987467" duration="4253000" />
       <workItem from="1725651425505" duration="2312000" />
       <workItem from="1725723294867" duration="1227000" />
+      <workItem from="1725736113023" duration="95000" />
+      <workItem from="1725736214779" duration="432000" />
+      <workItem from="1725736652736" duration="224000" />
+      <workItem from="1725819905536" duration="91000" />
+      <workItem from="1725900490846" duration="2972000" />
     </task>
     <servers />
   </component>

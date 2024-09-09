@@ -1,4 +1,5 @@
 import express from 'express';
+
 import date from 'bun'; // Ist das korrekt? Stelle sicher, dass du 'bun' richtig verwendest.
 // import cors from 'cors';
 import path from 'path';
@@ -30,7 +31,7 @@ app.post('/api/Wevent', (req, res) => {
 
 app.post('/api/Wvisit', async (req, res) => {
     console.log('Visit API accessed');
-    const data = collectNwriteData(req);
+    const data = collectNwriteData(req, res);
     console.log(data)
     res.status(200).send();
 });
