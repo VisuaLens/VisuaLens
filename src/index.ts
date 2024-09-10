@@ -4,6 +4,7 @@ import date from 'bun'; // Ist das korrekt? Stelle sicher, dass du 'bun' richtig
 // import cors from 'cors';
 import path from 'path';
 import { collectNwriteData } from './ts/collectData';
+import {getEvents} from "./utils/getEvents";
 const moment = require('moment-timezone');
 const app = express();
 
@@ -40,10 +41,18 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 })
 
+getEvents()
 // Server Start
 app.listen(8000, () => {
     console.log('Server is listening on port 8000');
 });
+
+
+app.post('/api/event/button', (req: any, res: any) => {
+    const eventBody = req.body
+    console.log(eventBody);
+    res.status(200).send()
+})
 
 // Exportiere die Request-Variable für den Wvisit-Endpunkt
 export {app};
