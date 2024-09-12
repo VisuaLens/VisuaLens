@@ -27,10 +27,13 @@ export function getVId() {
     return Vcounter
 }
 
+// This function is used as the name emplies to get device informations
+
 export async function getDevice(req: app.Request,) {
 
     const userAgent = req.headers['user-agent'];
     let os: any = 'Unknown'
+    const ip: any = req.ip
     let browser: any = 'Unknown'
 
     function getOs() {
@@ -68,12 +71,17 @@ export async function getDevice(req: app.Request,) {
         "devices": {
             "os": os,
             "browser": browser,
-
+            "ip": ip,
             "useragent": useragent,
         }
     }
 
     return JSON.stringify(devices);
+}
+
+
+export async function getLocation() {
+    return "doesn't work yet. Iplement yourself looser"
 }
 
 
