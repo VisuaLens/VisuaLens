@@ -7,7 +7,11 @@
     <list default="true" id="d8a3c5d7-3222-45c2-8713-80f7a4c0a34b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+>>>>>>> 8c76e53ef400937cea6d475f6d3608ec6e93b037
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/getEvents.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getEvents.ts" afterDir="false" />
 >>>>>>> 1ec7768a9df754e850dca275dc3392a2b6122f8e
@@ -37,29 +41,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Bun.index.ts.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Node.js.collectData.ts.executor": "Run",
-    "Node.js.get.ts.executor": "Run",
-    "Node.js.index.ts.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "javascript.karma.karma_node_package_dir": "",
-    "last_opened_file_path": "/Users/theo/Desktop/Code-Projekte/Visualens /VisuaLens",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "",
-    "nodejs.mocha.mocha_node_package_dir": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/theo/Desktop/Code-Projekte/Visualens /VisuaLens/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Bun.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Node.js.collectData.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.get.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.karma.karma_node_package_dir&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/theo/Desktop/Code-Projekte/Visualens /VisuaLens&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;&quot;,
+    &quot;nodejs.mocha.mocha_node_package_dir&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/theo/Desktop/Code-Projekte/Visualens /VisuaLens/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -104,8 +108,15 @@
       <workItem from="1725908284204" duration="1921000" />
 =======
       <workItem from="1725908284204" duration="910000" />
+<<<<<<< HEAD
       <workItem from="1725979886210" duration="2848000" />
 >>>>>>> 1ec7768a9df754e850dca275dc3392a2b6122f8e
+=======
+      <workItem from="1725979886210" duration="3086000" />
+      <workItem from="1726057811699" duration="535000" />
+      <workItem from="1726155372033" duration="229000" />
+      <workItem from="1726233504796" duration="766000" />
+>>>>>>> 8c76e53ef400937cea6d475f6d3608ec6e93b037
     </task>
     <servers />
   </component>

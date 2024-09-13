@@ -1,9 +1,10 @@
 
-// import cors from 'cors';
+import cors from 'cors';
 import express from 'express';
 import path from 'path';
 import { collectNwriteData } from './ts/collectData';
 import {getEvents} from "./utils/getEvents";
+import {getUId} from "./utils/get";
 const moment = require('moment-timezone');
 const app = express();
 export {app};
@@ -17,15 +18,16 @@ const visitData = path.join(__dirname, 'data/visits.json');
 
 console.log('Server is running');
 app.use(express.json());
+app.use(cors())
 // app.use(cors()); // Enable CORS
 
 // APIs
-app.post('/api/Wevent', (req, res) => {
+app.post('/api/event/Wevent', (req, res) => {
     console.log('Event API accessed');
     res.status(200).send();
 });
 
-app.post('/api/Wvisit', async (req, res) => {
+app.post('/api/visits/Wvisit', async (req, res) => {
     console.log('Visit API accessed');
     const data = collectNwriteData(req);
 
@@ -33,7 +35,7 @@ app.post('/api/Wvisit', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname,'test' ,'index.html'));
 })
 
 
@@ -48,4 +50,16 @@ app.post('/api/event/button', (req: any, res: any) => {
     res.status(200).send()
 })
 
-// Exportiere die Request-Variable für den Wvisit-Endpunkt
+
+app.get('/api/local/getuinfo', (req: any, res: any) => {
+    const uid: number = getUId();
+    let localV: number = 0
+    const data: object = {
+        "uid": uid,
+        "localVisit": localV
+    }
+    const jsondata = JSON.stringify(data)
+    res.send(jsondata)
+    res.status(200).send()
+})
+

@@ -1,6 +1,6 @@
-# ForgeData
+# VisuaLens
 
-## ForgeData is a Free-to-Use Analytic Tool build with TypeScript and Bun
+## VisuaLens is a Free-to-Use Analytic Tool build with TypeScript and Bun
 
 
 ### Why? 
