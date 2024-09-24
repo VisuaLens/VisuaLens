@@ -69,32 +69,42 @@ app.get('/api/local/getuid', (req: any, res: any) => {
     res.status(200).send()
 })
 
-async function writeUIDtoDB() {
-    // connect to mongodb 
-    const client = new MongoClient(uri)
-    const struid = uid.toString()
-    await client.connect
-    const db = client.db("main")
-    const visiscollection = db.collection("visits")
-    const testdata = {
-        "fortnite": [
-            "testdata", {
-              "testdata": "",
-              "testdata2": "duhuansognbliblablob",
-              "uid": uid,
-        },
-        "events", {
-            "testevent": "bli bla blub",
-            "testbuttonpress": "button bla pressed"
-        }
-    ]}
-    await visiscollection.insertOne(testdata)
-        // const result = await usersCollection.insertOne({ name: "Max", age: 30 });
+
+async function writeUIDtoDB(uid: string) {
+    try {
+        // Connect to MongoDB
+        const client = new MongoClient(uri);
+        await client.connect();
+
+        // Use 'main' database instead of 'local'
+        const db = client.db("local");
+        const visitsCollection = db.collection("visits");
+
+        const testdata = {
+            fortnite: {
+                testdata: "",
+                testdata2: "duhuansognbliblablob",
+                uid: uid,
+            },
+            events: {
+                testevent: "bli bla blub",
+                testbuttonpress: "button bla pressed"
+            }
+        };
+
+        // Insert into the collection
+        await visitsCollection.insertOne(testdata);
+
+        // Close the connection
+        await client.close();
+    } catch (err) {
+        console.error("Error writing to DB:", err);
+    }
 }
 
 app.post('/api/local/sendandsaveuid', (req: any, res: any) => {
-    uid = req.body;
-    writeUIDtoDB()
-    res.status(200).send()
-})
- 
+    const uid = req.body.uid;
+    writeUIDtoDB(uid); // Den uid Parameter übergeben
+    res.status(200).send("UID saved");
+});
+
