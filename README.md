@@ -167,6 +167,6 @@ Ein besonderer Dank geht an alle Open-Source-Projekte, die dieses Tool ermöglic
 
 ---
 
-Entwickelt mit ❤️ von [@the0hd](https://github.com/the0hd)
+Entwickelt mit ❤️ von [@the0hd](https://github.com/the0hdDev)
 
-Für weitere Informationen oder individuelle Anfragen besuchen Sie bitte [visualens.org](https://visualens.org) oder kontaktieren Sie direkt [@the0hd](https://github.com/the0hd).
+Für weitere Informationen oder individuelle Anfragen besuchen Sie bitte [visualens.org](https://visualens.org) oder kontaktieren Sie direkt [@the0hd](https://github.com/the0hdDev).
