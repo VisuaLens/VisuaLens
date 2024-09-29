@@ -71,8 +71,6 @@ VisuaLens ist ein hochmodernes Analytics-Tool, das umfassende Einblicke in Benut
   - A/B-Test-Vorschläge basierend auf Benutzerdaten
 
 #### Serverless-Implementierungen
-- Unterstützung für Kubernetes
-  - Automatische Skalierung und Lastverteilung
 - AWS Lambda Integration
   - Ereignisgesteuerte Analysen
 - Azure Functions Unterstützung
