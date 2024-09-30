@@ -66,6 +66,7 @@ app.get('/api/local/getuid', (req: any, res: any) => {
     res.status(200).send()
 })
 
+<<<<<<< HEAD
 async function writeUIDtoDB() {
     // connect to mongodb 
     const client = new MongoClient(uri)
@@ -99,3 +100,44 @@ async function writeUIDtoDB() {
     app.listen(8000, () => {
         console.log('Server is listening on port 8000');
     });
+=======
+
+async function writeUIDtoDB(uid: string) {
+    try {
+        // Connect to MongoDB
+        const client = new MongoClient(uri);
+        await client.connect();
+
+        // Use 'main' database instead of 'local'
+        const db = client.db("local");
+        const visitsCollection = db.collection("visits");
+
+        const testdata = {
+            fortnite: {
+                testdata: "",
+                testdata2: "duhuansognbliblablob",
+                uid: uid,
+            },
+            events: {
+                testevent: "bli bla blub",
+                testbuttonpress: "button bla pressed"
+            }
+        };
+
+        // Insert into the collection
+        await visitsCollection.insertOne(testdata);
+
+        // Close the connection
+        await client.close();
+    } catch (err) {
+        console.error("Error writing to DB:", err);
+    }
+}
+
+app.post('/api/local/sendandsaveuid', (req: any, res: any) => {
+    const uid = req.body.uid;
+    writeUIDtoDB(uid); // Den uid Parameter übergeben
+    res.status(200).send("UID saved");
+});
+
+>>>>>>> b5183097ea0221a7512c1e9c87521ab5f4fd00f6
