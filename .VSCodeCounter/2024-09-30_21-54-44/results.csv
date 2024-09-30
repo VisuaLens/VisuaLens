@@ -1,0 +1,24 @@
+"filename", "language", "JSON with Comments", "JSON", "XML", "Markdown", "TypeScript", "Properties", "JavaScript", "HTML", "comment", "blank", "total"
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\ForgeData.iml", "XML", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 12
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\dbnavigator.xml", "XML", 0, 0, 407, 0, 0, 0, 0, 0, 0, 0, 407
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\discord.xml", "XML", 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 7
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\modules.xml", "XML", 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 8
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\mongodb-settings-v1.xml", "XML", 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 23
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\vcs.xml", "XML", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 6
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\README.md", "Markdown", 0, 0, 0, 11, 0, 0, 0, 0, 0, 11, 22
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\dist\index.js", "JavaScript", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\package-lock.json", "JSON", 0, 1067, 0, 0, 0, 0, 0, 0, 0, 1, 1068
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\package.json", "JSON", 0, 29, 0, 0, 0, 0, 0, 0, 0, 1, 30
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\.env", "Properties", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\data\events.json", "JSON", 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\data\visits.json", "JSON", 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 12
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\example.json", "JSON", 0, 77, 0, 0, 0, 0, 0, 0, 0, 0, 77
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\index.ts", "TypeScript", 0, 0, 0, 0, 70, 0, 0, 0, 10, 21, 101
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\test\index.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 18, 0, 2, 20
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\test\script.js", "JavaScript", 0, 0, 0, 0, 0, 0, 10, 0, 0, 3, 13
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\test\testsite.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 10
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\ts\collectData.ts", "TypeScript", 0, 0, 0, 0, 25, 0, 0, 0, 8, 20, 53
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\utils\get.ts", "TypeScript", 0, 0, 0, 0, 62, 0, 0, 0, 3, 23, 88
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\utils\getEvents.ts", "TypeScript", 0, 0, 0, 0, 9, 0, 0, 0, 0, 7, 16
+"c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\tsconfig.json", "JSON with Comments", 12, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"Total", "-", 12, 1186, 463, 11, 166, 0, 11, 28, 21, 91, 1989

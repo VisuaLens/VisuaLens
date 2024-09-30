@@ -46,9 +46,6 @@ app.get('/', (req, res) => {
 
 
 // Server Start
-app.listen(8000, () => {
-    console.log('Server is listening on port 8000');
-});
 
 
 app.post('/api/event/button', (req: any, res: any) => {
@@ -79,22 +76,26 @@ async function writeUIDtoDB() {
     const testdata = {
         "fortnite": [
             "testdata", {
-              "testdata": "",
-              "testdata2": "duhuansognbliblablob",
-              "uid": uid,
-        },
-        "events", {
-            "testevent": "bli bla blub",
-            "testbuttonpress": "button bla pressed"
-        }
-    ]}
-    await visiscollection.insertOne(testdata)
+                "testdata": "",
+                "testdata2": "duhuansognbliblablob",
+                "uid": uid,
+            },
+            "events", {
+                "testevent": "bli bla blub",
+                "testbuttonpress": "button bla pressed"
+            }
+        ]}
+        await visiscollection.insertOne(testdata)
         // const result = await usersCollection.insertOne({ name: "Max", age: 30 });
-}
-
-app.post('/api/local/sendandsaveuid', (req: any, res: any) => {
-    uid = req.body;
-    writeUIDtoDB()
-    res.status(200).send()
-})
- 
+    }
+    
+    app.post('/api/local/sendandsaveuid', (req: any, res: any) => {
+        uid = req.body;
+        writeUIDtoDB()
+        res.status(200).send()
+    })
+    
+    
+    app.listen(8000, () => {
+        console.log('Server is listening on port 8000');
+    });

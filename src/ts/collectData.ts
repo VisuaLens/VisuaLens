@@ -42,7 +42,7 @@ export async function collectNwriteData(req: any) {
     }
 
     let data: any = await getVisitData()
-    const JSONdata = JSON.parse(data)
+    const JSONdata = JSON.stringify(data)
     // async function run() {
     console.log(JSONdata)
     return JSONdata

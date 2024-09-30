@@ -1,0 +1,97 @@
+Date : 2024-09-30 21:54:44
+Directory : c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build
+Total : 39 files,  197 codes, 5 comments, 27 blanks, all 229 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |         10 |        118 |          0 |          1 |        119 |
+| TypeScript         |          7 |         50 |          5 |         20 |         75 |
+| HTML               |          3 |         12 |          0 |          2 |         14 |
+| JavaScript         |          3 |         10 |          0 |          3 |         13 |
+| XML                |         11 |          7 |          0 |          0 |          7 |
+| JSON with Comments |          2 |          0 |          0 |          0 |          0 |
+| Markdown           |          2 |          0 |          0 |          0 |          0 |
+| Properties         |          1 |          0 |          0 |          1 |          1 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                       | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                          |         39 |        197 |          5 |         27 |        229 |
+| . (Files)                                                                                                  |          4 |      1,119 |          0 |         14 |      1,133 |
+| ..                                                                                                         |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..                                                                                                      |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..\..                                                                                                   |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..\..\..                                                                                                |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..\..\..\..                                                                                             |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..\..\..\..\..                                                                                          |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..\..\..\..\..\Theo                                                                                     |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..\..\..\..\..\Theo\Desktop                                                                             |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects                                                               |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects\ForgeData                                                     |         17 |     -1,680 |        -16 |        -64 |     -1,760 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects\ForgeData (Files)                                             |          4 |     -1,001 |          0 |        -13 |     -1,014 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects\ForgeData\.idea                                               |          5 |       -456 |          0 |          0 |       -456 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects\ForgeData\dist                                                |          1 |         -1 |          0 |          0 |         -1 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects\ForgeData\src                                                 |          7 |       -222 |        -16 |        -51 |       -289 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects\ForgeData\src (Files)                                         |          3 |       -125 |         -7 |        -11 |       -143 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects\ForgeData\src\data                                            |          2 |        -13 |          0 |          0 |        -13 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects\ForgeData\src\ts                                              |          1 |        -23 |         -8 |        -20 |        -51 |
+| ..\..\..\..\..\..\Theo\Desktop\code-projects\ForgeData\src\utils                                           |          1 |        -61 |         -1 |        -20 |        -82 |
+| .idea                                                                                                      |          6 |        463 |          0 |          0 |        463 |
+| dist                                                                                                       |          1 |          1 |          0 |          0 |          1 |
+| src                                                                                                        |         11 |        294 |         21 |         77 |        392 |
+| src (Files)                                                                                                |          3 |        147 |         10 |         22 |        179 |
+| src\data                                                                                                   |          2 |         13 |          0 |          0 |         13 |
+| src\test                                                                                                   |          3 |         38 |          0 |          5 |         43 |
+| src\ts                                                                                                     |          1 |         25 |          8 |         20 |         53 |
+| src\utils                                                                                                  |          2 |         71 |          3 |         30 |        104 |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                   | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\Theo\Desktop\code-projects\ForgeData\.idea\ForgeData.iml                                          | XML                |        -12 |          0 |          0 |        -12 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\.idea\dbnavigator.xml                                        | XML                |       -407 |          0 |          0 |       -407 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\.idea\modules.xml                                            | XML                |         -8 |          0 |          0 |         -8 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\.idea\mongodb-settings-v1.xml                                | XML                |        -23 |          0 |          0 |        -23 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\.idea\vcs.xml                                                | XML                |         -6 |          0 |          0 |         -6 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\README.md                                                    | Markdown           |        -11 |          0 |        -11 |        -22 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\dist\index.js                                                | JavaScript         |         -1 |          0 |          0 |         -1 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\package-lock.json                                            | JSON               |       -952 |          0 |         -1 |       -953 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\package.json                                                 | JSON               |        -26 |          0 |          0 |        -26 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\src\data\events.json                                         | JSON               |         -1 |          0 |          0 |         -1 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\src\data\visits.json                                         | JSON               |        -12 |          0 |          0 |        -12 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\src\example.json                                             | JSON               |        -77 |          0 |          0 |        -77 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\src\index.html                                               | HTML               |        -16 |          0 |          0 |        -16 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\src\index.ts                                                 | TypeScript         |        -32 |         -7 |        -11 |        -50 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\src\ts\collectData.ts                                        | TypeScript         |        -23 |         -8 |        -20 |        -51 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\src\utils\get.ts                                             | TypeScript         |        -61 |         -1 |        -20 |        -82 |
+| c:\Users\Theo\Desktop\code-projects\ForgeData\tsconfig.json                                                | JSON with Comments |        -12 |          0 |         -1 |        -13 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\ForgeData.iml           | XML                |         12 |          0 |          0 |         12 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\dbnavigator.xml         | XML                |        407 |          0 |          0 |        407 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\discord.xml             | XML                |          7 |          0 |          0 |          7 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\modules.xml             | XML                |          8 |          0 |          0 |          8 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\mongodb-settings-v1.xml | XML                |         23 |          0 |          0 |         23 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\.idea\vcs.xml                 | XML                |          6 |          0 |          0 |          6 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\README.md                     | Markdown           |         11 |          0 |         11 |         22 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\dist\index.js                 | JavaScript         |          1 |          0 |          0 |          1 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\package-lock.json             | JSON               |      1,067 |          0 |          1 |      1,068 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\package.json                  | JSON               |         29 |          0 |          1 |         30 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\.env                      | Properties         |          0 |          0 |          1 |          1 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\data\events.json          | JSON               |          1 |          0 |          0 |          1 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\data\visits.json          | JSON               |         12 |          0 |          0 |         12 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\example.json              | JSON               |         77 |          0 |          0 |         77 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\index.ts                  | TypeScript         |         70 |         10 |         21 |        101 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\test\index.html           | HTML               |         18 |          0 |          2 |         20 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\test\script.js            | JavaScript         |         10 |          0 |          3 |         13 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\test\testsite.html        | HTML               |         10 |          0 |          0 |         10 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\ts\collectData.ts         | TypeScript         |         25 |          8 |         20 |         53 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\utils\get.ts              | TypeScript         |         62 |          3 |         23 |         88 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\src\utils\getEvents.ts        | TypeScript         |          9 |          0 |          7 |         16 |
+| c:\Users\theow\Desktop\Code-Projekts\VisuaLens\Visualens-Main-Tool\Dev-Build\tsconfig.json                 | JSON with Comments |         12 |          0 |          1 |         13 |
+| Total                                                                                                      |                    |        197 |          5 |         27 |        229 |
++------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
