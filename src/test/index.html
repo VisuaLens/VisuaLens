@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <title>random shit</title>
 </head>
-<script>
-  async function getuinfo() {
-  const Juserdata = await fetch("http://127.0.0.1:8000/api/local/getuinfo");
-  const userdata = await Juserdata.json();  
-  return userdata;
-}
+<script src="script.js">
 
-getuinfo().then(userdata => console.log(userdata));
 </script>
 <body>
     <h1>du scheis looser</h1>
 <p>i got zero dates been scrolling notes</p>
+
+<button onclick="alert(localStorage.getItem('uid'))" style="padding: 20px; border: 1px; border-color: rgb(158, 158, 158);">Check if UID is avalabil</button>
+
 </body>
 </html>

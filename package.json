@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "bun run --hot src/index.ts "
   },
   "devDependencies": {
     "@types/bun": "latest",
