@@ -1,31 +1,29 @@
-
+// imports
 import cors from 'cors';
 import express from 'express';
 import path from 'path';
 import { collectNwriteData } from './ts/collectData';
-// import {getEvents} from "./utils/getEvents";
+import Database from 'better-sqlite3'
 import {getUId} from "./utils/get";
 import { MongoClient } from 'mongodb'
 import dotenv from 'dotenv'
-const moment = require('moment-timezone');
-const app = express();
-dotenv.config()
+// import {getEvents} from "./utils/getEvents";
 
-// const client = new MongoClient(uri)
+// Variables
+const moment = require('moment-timezone');
+const db = new Database('main.db')
+const app = express();
+const time = moment().tz('Europe/Berlin').format('YYYY-MM-DD HH:mm:ss');
+const visitData = path.join(__dirname, 'data/visits.json');
 export {app};
 
-// client.connect()
-const time = moment().tz('Europe/Berlin').format('YYYY-MM-DD HH:mm:ss');
-
-// Pfad zur JSON-Datei
-const visitData = path.join(__dirname, 'data/visits.json');
-
-// JSON-Daten zum Anhängen
-
+// Init Config
 console.log('Server is running');
+const initquary = Bun.file('../data/init.sql')
+console.log(initquary)
+dotenv.config()
 app.use(express.json());
 app.use(cors())
-// app.use(cors()); // Enable CORS
 
 // APIs
 app.post('/api/event/Wevent', (req, res) => {
