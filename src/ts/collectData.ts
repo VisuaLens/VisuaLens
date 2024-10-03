@@ -16,7 +16,7 @@ const moment = require('moment-timezone')
 
 export async function collectNwriteData(req: any) {
 
-
+    
     async function getVisitData() {
         // Variables
         const time = moment().tz('Europe/Berlin').format('YYYY-MM-DD HH:mm:ss');
@@ -40,6 +40,17 @@ export async function collectNwriteData(req: any) {
 
         return data
     }
+
+    async function CollectNWriteDataToDB() {
+        let data: object = await getVisitData()
+
+            
+
+
+
+
+    }
+
 
     let data: any = await getVisitData()
     const JSONdata = JSON.stringify(data)
