@@ -1,17 +1,66 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>random shit</title>
+    <title>random stuff</title>
 </head>
-<script src="script.js">
+<script>
+    async function sendUID() {
+        const luid = {
+            uid: localStorage.getItem('uid')
+        }
+        const jluid = JSON.stringify(luid)
 
+        const response = await fetch('http://localhost:8000/api/local/sudi', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: jluid
+        })  
+        console.log("Sent UID to server:", luid)
+    }
+
+    async function checkUID() {
+        const response = await fetch("http://localhost:8000/api/local/nudi")
+        const jnudi = await response.json()
+        localStorage.setItem('uid', jnudi.uid)
+        console.log('Wrote', jnudi.uid, 'to LocalStorage')
+        sendUID()
+    }
+
+    function reviewUID() {
+        const uid = localStorage.getItem('uid')
+        if (uid === null || uid === "null") { // Überprüfe, ob der Wert "null" ist
+            console.log("No UID available")
+        } else {
+            console.log("UID available in LocalStorage:", uid)
+        }
+    }
+
+    function clearUID() {
+        alert('Cleared LocalStorage')
+        localStorage.removeItem('uid') // Entfernt den UID-Eintrag vollständig
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const uid = localStorage.getItem('uid')
+        if (uid === null || uid === "null") { // Überprüfe, ob die UID "null" ist
+            checkUID()
+        } else {
+            sendUID()
+        }
+    });
 </script>
 <body>
     <h1>du scheis looser</h1>
-<p>i got zero dates been scrolling notes</p>
+    <p>i got zero dates been scrolling notes</p>
 
-<button onclick="alert(localStorage.getItem('uid'))" style="padding: 20px; border: 1px; border-color: rgb(158, 158, 158);">Check if UID is avalabil</button>
+    <button onclick="reviewUID()" style="padding: 20px; border: 5px; border-color: rgb(0, 0, 0); margin: 10px;">
+        Check if UID is available
+    </button>
 
+    <button onclick="clearUID()" style="padding: 20px; border: 5px; border-color: rgb(0, 0, 0); margin: 10px;">
+        Clear LocalStorage
+    </button>
 </body>
 </html>

@@ -1,17 +1,13 @@
--- init.sql
-CREATE TABLE IF NOT EXISTS sessions (
-    id SERIAL PRIMARY KEY,
-    userid VARCHAR(50),
-    sessionid VARCHAR(50),
-    ip VARCHAR(50),
-    timestamp TIMESTAMP
-);
+CREATE TABLE IF NOT EXISTS users (
+    uid INTEGER
+)
 
-CREATE TABLE IF NOT EXISTS events (
-    id SERIAL PRIMARY KEY,
-    sessionid VARCHAR(50),
-    event_type VARCHAR(100),
-    event_data JSONB,
-    event_time TIMESTAMP,
-    FOREIGN KEY (sessionid) REFERENCES sessions(sessionid)
+CREATE TABLE IF NOT EXISTS sessions (
+    session_id TEXT PRIMARY KEY,
+    uid TEXT REFERENCES users(uid) ON DELETE CASCADE,
+    ip_address TEXT,
+    session_start INTEGER
+    timespent INTEGER,
+    user_agent TEXT,
+    events TEXT
 );

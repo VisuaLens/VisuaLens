@@ -53,21 +53,17 @@ app.post('/api/event/button', (req: any, res: any) => {
     res.status(200).send()
 })
 
-
-
-app.get('/api/local/nudi', (req: any, res: any) => {
-        res.json({
-            uid: getUId()
-        })
-        res.status(200).send()
-})
-
-
-app.post('/api/local/sudi', (req: any, res: any) => {
-        console.log("uid" + req.body)
-        res.status(200).send()
-})
+app.get('/api/local/nudi', (req, res) => {
+    const uid = getUId(); 
+    res.json({ uid: uid }); 
     
-    app.listen(8000, () => {
-        console.log('Server is listening on port 8000');
-    });
+});
+
+app.post('/api/local/sudi', (req, res) => {
+    console.log("Received UID from client:", req.body); 
+    res.status(200).send(); 
+});
+
+app.listen(8000, () => {
+    console.log('Server is listening on port 8000');
+});
