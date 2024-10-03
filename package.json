@@ -4,14 +4,14 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "bun run --hot src/index.ts "
+    "dev": "deno run --hot src/index.ts "
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",
     "@types/bun": "latest",
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.2"
   },
   "private": true,
   "keywords": [],
@@ -19,14 +19,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "better-sqlite3": "^11.3.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "express": "^4.21.0",
     "moment-timezone": "^0.5.45",
     "mongodb": "^6.9.0",
     "nanoid": "^5.0.7",
     "path": "^0.12.7",
+    "sqlite3": "^5.1.7",
     "uuid": "^10.0.0"
   }
 }

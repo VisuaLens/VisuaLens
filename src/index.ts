@@ -2,25 +2,29 @@
 import cors from 'cors';
 import express from 'express';
 import path from 'path';
-import { collectNwriteData } from './ts/collectData';
-import Database from 'better-sqlite3'
+// import { collectNwriteData } from './ts/collectData.ts';
 import {getUId} from "./utils/get";
-import { MongoClient } from 'mongodb'
 import dotenv from 'dotenv'
+import { OPEN_READWRITE } from 'sqlite3';
 // import {getEvents} from "./utils/getEvents";
 
 // Variables
 const moment = require('moment-timezone');
-const db = new Database('main.db')
+const sqlite = require('sqlite3').verbose()
 const app = express();
 const time = moment().tz('Europe/Berlin').format('YYYY-MM-DD HH:mm:ss');
 const visitData = path.join(__dirname, 'data/visits.json');
+const db = new sqlite.Database(path.resolve(__dirname, './database/main.db'), OPEN_READWRITE, (err: any) => {
+    if (err) return console.error(err.message);
+});
+
+let sql;
 export {app};
 
 // Init Config
 console.log('Server is running');
-const initquary = Bun.file('../data/init.sql')
-console.log(initquary)
+// const initquery: any = Deno.read('./data/init.sql')
+console.log()
 dotenv.config()
 app.use(express.json());
 app.use(cors())
@@ -33,7 +37,7 @@ app.post('/api/event/Wevent', (req, res) => {
 
 app.post('/api/visits/Wvisit', async (req, res) => {
     console.log('Visit API accessed');
-    const data = collectNwriteData(req);
+    // const data = collectNwriteData(req);
 
     res.status(200).send();
 });
@@ -62,6 +66,7 @@ app.post('/api/local/sudi', (req, res) => {
     res.status(200).send(); 
 });
 
+db.run()
 app.listen(8000, () => {
     console.log('Server is listening on port 8000');
 });
