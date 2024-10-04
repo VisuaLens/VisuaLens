@@ -14,8 +14,7 @@ CREATE TABLE IF NOT EXISTS sessions (
     session_start INTEGER
     timespent INTEGER,
     user_agent TEXT,
-
-); 
+    ); 
 
 CREATE TABLE IF NOT EXISTS events (
     event_id INTEGER

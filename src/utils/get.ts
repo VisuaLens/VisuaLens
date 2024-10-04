@@ -1,5 +1,5 @@
 // @ts-ignore
-import app from '../index'
+import app from '../app'
 import {nanoid} from "nanoid";
 import moment from "moment-timezone";
 const uuid: any = require('uuid')

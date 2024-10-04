@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "deno run --hot src/index.ts "
+    "dev": "clear && bun run --hot src/app.ts"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",
