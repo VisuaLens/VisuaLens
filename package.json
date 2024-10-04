@@ -1,10 +1,10 @@
 {
-  "name": "forgedata",
+  "name": "visualens",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "src/app.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "clear && bun run --hot src/app.ts"
+    "dev": "bun run --hot src/app.ts"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",
@@ -23,7 +23,6 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "moment-timezone": "^0.5.45",
-    "mongodb": "^6.9.0",
     "nanoid": "^5.0.7",
     "path": "^0.12.7",
     "sqlite3": "^5.1.7",
