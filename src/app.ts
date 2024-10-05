@@ -16,39 +16,11 @@ const db = new Database(dbpath);
 const app = express();
 const time = moment().tz("Europe/Berlin").format("YYYY-MM-DD HH:mm:ss");
 const visitData = path.join(__dirname, "data/visits.json");
-
+const readinitquery: BunFile = Bun.file('./data/init.sql')
+const textinit: any = readinitquery.text()
+const streak = 1 
 // Queries
-const initquery = db.query(
-  `
-            CREATE TABLE IF NOT EXISTS users (
-        uid INTEGER PRIMARY KEY,
-        first_visit TEXT,
-        visit_count INTEGER
-    );
-
-    CREATE TABLE IF NOT EXISTS sessions (
-        visit_id INTEGER PRIMARY KEY,
-        visit_count INTEGER,
-        session_id TEXT UNIQUE,
-        uid INTEGER REFERENCES users(uid) ON DELETE CASCADE,
-        device TEXT,
-        ip_address TEXT,
-        session_start INTEGER,
-        timespent INTEGER,
-        user_agent TEXT
-    );
-
-    CREATE TABLE IF NOT EXISTS events (
-        event_id INTEGER PRIMARY KEY,
-        uid INTEGER REFERENCES users(uid) ON DELETE CASCADE,
-        session_id TEXT REFERENCES sessions(session_id) ON DELETE CASCADE,
-        event_type TEXT,
-        page_url TEXT,
-        event_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        metadata TEXT
-    );
-
-`);
+const initquery = db.query(textinit);
 
 // Exports
 export { app };
