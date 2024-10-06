@@ -11,6 +11,8 @@ const sqlite = require("sqlite3").verbose();
 // Queries
 
 // Variables
+const initqueryread: BunFile = Bun.file('./data/init.sql')
+const initquerytext: any = initqueryread.text()
 const dbpath = path.join(__dirname, "database", "main.db");
 const db = new Database(dbpath);
 const app = express();
@@ -20,7 +22,11 @@ const readinitquery: BunFile = Bun.file('./data/init.sql')
 const textinit: any = readinitquery.text()
 const streak = 1 
 // Queries
+<<<<<<< HEAD
 const initquery = db.query(textinit);
+=======
+const initquery = db.query(initquerytext);
+>>>>>>> 37bb708 (added database logic to write uid to database)
 
 // Exports
 export { app };
@@ -58,6 +64,18 @@ app.get("/api/local/nudi", (req, res) => {
 
 app.post("/api/local/sudi", (req, res) => {
   console.log("Received UID from client:", req.body);
+  const uid = req.body()
+  try {
+    db.query(`
+      INSERT INTO users (user_id) VALUES (${uid})
+      `) 
+      console.debug('Query Sucess')
+  } catch {
+    console.error()
+    console.error('Query failed')
+  } finally {
+    db.close
+  }
   res.status(200).send();
 });
 

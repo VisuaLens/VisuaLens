@@ -1,13 +1,13 @@
 CREATE TABLE IF NOT EXISTS users (
     user_id TEXT PRIMARY KEY,
     first_visit TIMESTAMP,
-    visit_count INTEGER,
+    visit_count INTEGER AUTO_INCREMENT,
     attributes TEXT
 );
 
 CREATE TABLE IF NOT EXISTS sessions (
     visit_id INTEGER,
-    session_count INTEGER,
+    session_count INTEGER AUTO_INCREMENT,
     session_id TEXT PRIMARY KEY,
     user_id TEXT REFERENCES users(user_id) ON DELETE CASCADE,
     useragent TEXT,
@@ -28,6 +28,6 @@ CREATE TABLE IF NOT EXISTS events (
     page_url TEXT,
     event_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     actions TEXT,
-    event_count INTEGER,
+    event_count INTEGER AUTO_INCREMENT,
     metadata TEXT
 );
