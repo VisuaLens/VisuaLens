@@ -6,14 +6,14 @@ const bufferingIf = "https://tenor.com/view/loading-buffering-buffer-load-circle
 
 export default function Home() {
 
-    const admin = localStorage.getItem('isAdmin')
+  //  const admin = localStorage.getItem('isAdmin')
 
 
 
-  if (localStorage.getItem('isAdmin'))
+  // if (localStorage.getItem('isAdmin'))
     
 
-    redirect('/signin')
+    redirect('/dashboard')
 
     return (
         <>
