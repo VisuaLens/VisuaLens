@@ -4,7 +4,7 @@ export default function NavBar() {
   return (
     <>
         <nav className='pr-[1400px] mb-[100%]'>
-            <div className='p-[20px] border-t border-gray-700 border-[2px] pb-[100%] h-screen '>
+            <div className='p-[20px] border-t border-gray-700 pb-[100%] h-screen bg-white rounded-xl '>
                 <div className='flex py-[20px]'><House /><a href="" className='ml-2'>Dashboard</a></div>
                 <div className='flex py-[20px]'><BarChart2 /><a href="" className='ml-2'>Real-Time Statistics</a></div>
                 <div className='flex py-[20px]'><Activity /><a href="" className='ml-2'>Behavior Analysis</a></div>
