@@ -4,7 +4,7 @@ export default function dashboard() {
 
     return (
         <>
-            <nav><NavBar /></nav>
+            <nav><NavBar site={"dashboard"}/></nav>
             <main></main>
             <footer></footer>
         </>
